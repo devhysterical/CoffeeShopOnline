@@ -1,11 +1,7 @@
-package com.example.coffeeshoponline
+package com.example.coffeeshoponline.Activity
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.coffeeshoponline.databinding.ActivityIntroBinding
 
 class IntroActivity : BaseActivity() {
