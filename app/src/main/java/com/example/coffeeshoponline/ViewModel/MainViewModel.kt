@@ -17,9 +17,12 @@ class MainViewModel:ViewModel() {
 
     private val _category = MutableLiveData<MutableList<CategoryModel>>()
     private val _popular = MutableLiveData<MutableList<ItemsModel>>()
+    private val _offer = MutableLiveData<MutableList<ItemsModel>>()
 
     val category:LiveData<MutableList<CategoryModel>> = _category
     val popular:LiveData<MutableList<ItemsModel>> = _popular
+    val offer:LiveData<MutableList<ItemsModel>> = _offer
+
 
     fun loadCategory() {
         val Ref = firebaseDatabase.getReference("Category")
@@ -53,6 +56,26 @@ class MainViewModel:ViewModel() {
                     }
                 }
                 _popular.value = lists
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Log.d("MainViewModel", "onCancelled: ${error.message}")
+            }
+        })
+    }
+
+    fun loadOffer() {
+        val Ref = firebaseDatabase.getReference("Offers")
+        Ref.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val lists = mutableListOf<ItemsModel>()
+                for (childSnapshot in snapshot.children) {
+                    val list = childSnapshot.getValue(ItemsModel::class.java)
+                    if (list != null) {
+                        lists.add(list)
+                    }
+                }
+                _offer.value = lists
             }
 
             override fun onCancelled(error: DatabaseError) {

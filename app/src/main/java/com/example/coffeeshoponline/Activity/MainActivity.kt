@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.coffeeshoponline.Adapter.CategoryAdapter
+import com.example.coffeeshoponline.Adapter.OfferAdapter
 import com.example.coffeeshoponline.Adapter.PopularAdapter
 import com.example.coffeeshoponline.R
 import com.example.coffeeshoponline.ViewModel.MainViewModel
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         initCategory()
         initPopular()
+        initOffers()
     }
 
     private fun initPopular() {
@@ -54,5 +56,20 @@ class MainActivity : AppCompatActivity() {
             binding.progressBarCategory.visibility = View.GONE
         })
         viewModel.loadCategory()
+    }
+
+    private fun initOffers() {
+        binding.progressBarCategory.visibility = View.VISIBLE
+        viewModel.offer.observe(this, Observer {
+            binding.recyclerViewCategory.layoutManager =
+                LinearLayoutManager(
+                    this@MainActivity,
+                    LinearLayoutManager.HORIZONTAL,
+                    false
+                )
+            binding.recyclerViewOffer.adapter = OfferAdapter(it)
+            binding.progressBarOffer.visibility = View.GONE
+        })
+        viewModel.loadOffer()
     }
 }

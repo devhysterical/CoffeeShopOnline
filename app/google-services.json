@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "220130890187",
+    "firebase_url": "https://coffeeshoponlinee-default-rtdb.firebaseio.com",
     "project_id": "coffeeshoponlinee",
     "storage_bucket": "coffeeshoponlinee.appspot.com"
   },
