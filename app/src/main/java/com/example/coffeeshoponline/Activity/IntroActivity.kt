@@ -1,18 +1,21 @@
-package com.example.coffeeshoponline.Activity
+package com.example.coffeeshoponline.activity
 
 import android.content.Intent
 import android.os.Bundle
 import com.example.coffeeshoponline.databinding.ActivityIntroBinding
 
 class IntroActivity : BaseActivity() {
+
+    private val binding: ActivityIntroBinding by lazy {
+        ActivityIntroBinding.inflate(layoutInflater)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        lateinit var binding: ActivityIntroBinding
         super.onCreate(savedInstanceState)
-        binding = ActivityIntroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.startBtn.setOnClickListener {
-            startActivity(Intent(this@IntroActivity, MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 }
