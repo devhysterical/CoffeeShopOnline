@@ -14,7 +14,7 @@ class IntroActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.startBtn.setOnClickListener {
+        binding.startButton.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
     }
