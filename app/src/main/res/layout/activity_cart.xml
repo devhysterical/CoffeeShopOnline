@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/light_gradient"
+    android:background="@drawable/coffee__gradient"
     android:fillViewport="true"
     tools:context=".activity.CartActivity">
 
@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My Cart"
+                android:text="Giỏ hàng của tôi"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold"
@@ -64,7 +64,7 @@
                 android:textSize="14sp"
                 android:inputType="text"
                 android:textColorHint="#8A7272"
-                android:hint="Enter Your Copoun"
+                android:hint="Nhập mã giảm giá"
                 android:paddingStart="8dp"
                 android:background="#00ffffff"/>
 
@@ -73,11 +73,12 @@
                 style="@android:style/Widget.Button"
                 android:layout_width="100dp"
                 android:layout_height="38dp"
+
                 android:textColor="@color/white"
                 android:layout_marginEnd="4dp"
                 android:textSize="16sp"
                 android:background="@drawable/orange_bg"
-                android:text="Apply"
+                android:text="Áp dụng"
                 />
 
         </LinearLayout>
@@ -91,7 +92,7 @@
                 android:id="@+id/subTotalTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Subtotal"
+                android:text="Tạm tính"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
@@ -103,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$-"
-                android:textColor="@color/orange"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -114,7 +115,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="Delivery"
+                android:text="Phí vận chuyển"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
@@ -126,7 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$-"
-                android:textColor="@color/orange"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -137,7 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="Total Tax"
+                android:text="Tổng thuế"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
@@ -149,7 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$-"
-                android:textColor="@color/orange"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -170,7 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Total"
+                android:text="Tổng cộng"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
@@ -182,7 +183,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$-"
-                android:textColor="@color/orange"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -201,7 +202,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:background="@drawable/orange_bg"
-            android:text="Proceed to Checkout"
+            android:text="Tiến hành thanh toán"
             />
 
     </LinearLayout>

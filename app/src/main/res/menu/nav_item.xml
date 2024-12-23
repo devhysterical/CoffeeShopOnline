@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:title=""
+        android:title="Trang chủ"
         android:icon="@drawable/bottom_btn1"
         app:iconTint="@color/black"/>
 
     <item
-        android:title=""
+        android:title="Tài khoản"
         android:icon="@drawable/bottom_btn2"
         app:iconTint="@color/black"/>
 
@@ -18,13 +18,13 @@
         android:enabled="false"/>
 
     <item
-        android:title=""
+        android:title="Thông báo"
         android:icon="@drawable/bottom_btn3"
         app:iconTint="@color/black"/>
 
     <item
         android:icon="@drawable/bottom_btn4"
-        android:title=""
+        android:title="Cài đặt"
         app:iconTint="@color/black"/>
 
 </menu>

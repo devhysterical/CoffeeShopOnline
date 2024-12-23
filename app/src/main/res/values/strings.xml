@@ -1,24 +1,22 @@
 <resources>
     <string name="app_name">Coffee Shop</string>
-    <string name="search_anything">Search Coffee...</string>
-    <string name="good_morning">Good Morning</string>
-    <string name="find_the_best_coffee_nfor_you">Find the best coffee\nfor you</string>
-    <string name="started">Started</string>
-    <string name="grab_your_first_coffee_in_this_morning">Grab your first coffee in this morning</string>
-    <string name="popular">Popular</string>
-    <string name="see_all">See all</string>
-    <string name="available_offers">Available offers</string>
+    <string name="search_anything">Tìm kiếm...</string>
+    <string name="good_morning">Xin Chào</string>
+    <string name="grab_your_first_coffee_in_this_morning">Bắt đầu ngày mới với tách cà phê đầu tiên!</string>
+    <string name="popular">Phổ biến</string>
+    <string name="see_all">Hiển thị tất cả</string>
+    <string name="available_offers">Chương trình khuyến mãi</string>
     <string name="cart">Cart</string>
 
-    <string name="welcome_to_">
-        Welcome to our cozy coffee corner, where every cup is a delightful for you.
+    <string name="slogan_1">
+        Yêu từng giọt cà phê, đắm chìm trong hương vị ngọt ngào!
     </string>
 
-    <string name="fall_in_lov">
-        Fall in Love with Coffee in Blissful Delight!
+    <string name="slogan_2">
+        Chào mừng bạn đến góc cà phê ấm áp, nơi từng tách đều là niềm vui dành riêng cho bạn!
     </string>
 
-    <string name="get_started">
-        Get Started
+    <string name="order_button">
+        Order Ngay
     </string>
 </resources>
